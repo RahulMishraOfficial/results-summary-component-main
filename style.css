@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(240, 20%, 95%);
+}
+main{
+    display: flex;
+    max-width: 500px;
+    min-height: 350px;
+    border-radius:20px;
+    overflow: hidden;
+    background-color: white;
+}
+.result{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius:20px;
+    background: linear-gradient(0deg, #2e2be9 45%, #7857ff 90%);
+}
+.result .resultPara{
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    font-size: 18px;
+}
+.result .resulCircle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-top: 20px;
+    color: white;
+    background: linear-gradient(180deg, #4e21ca, #2421ca00);
+}
+.circleMainPara{
+    font-size: 50px;
+}
+.ciclePara{
+    font-size: 12PX;
+    color: hsla(241, 100%, 89%, 0.692);
+}
+.result h2{
+    color: white;
+    margin-top: 20px;
+}
+.result p{
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+    color: hsl(241, 100%, 89%);
+}
+.para{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.summary{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.summary .box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.summary .box .leftContent{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.summary .box p{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.summary .box .score span{
+    font-size: 12px;
+    font-weight: 700;
+}
+.summary p{
+    font-size: 16px;
+    font-weight: 700;
+}
+#reaction{
+    color: hsl(0, 100%, 67%);
+}
+#memory{
+    color: hsl(39, 100%, 56%);
+}
+#verbal{
+    color: hsl(166, 100%, 37%);
+}
+#visual{
+    color: hsl(234, 85%, 45%);
+}
+.span1{
+    color: hsl(240, 20%, 64%);
+}
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+button:hover{
+    background: linear-gradient(0deg, #2e2be9 25%, #7857ff 100%);
+}
+
+.box1{
+    background-color: hsla(241, 100%, 89%, 0.164);
+}
+.box2{
+    background-color: hsla(241, 100%, 89%, 0.151);
+}
+.box3{
+    background-color: hsla(241, 100%, 89%, 0.164);
+}
+.box4{
+    background-color: hsla(241, 100%, 89%, 0.253);
+}
+.attribution{
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.attribution a{
+    text-decoration: none;
+}
+@media (width <= 485px){
+    main{
+        flex-direction: column;
+        max-width: 100vw;
+        min-height: 100vh;
+    }
+    main .result{
+        width: 100%;
+        height: 50%;
+    }
+    main .result .resultPara{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .result .resulCircle{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+    .circleMainPara{
+        font-size: 70px;
+    }
+    .ciclePara{
+        font-size: 18PX;
+    }
+    .result h2{
+        font-size: 32px;
+        margin-top: 35px;
+    }
+    .result p{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 45px;
+    }
+
+    main .summary{
+        width: 100%;
+        height: 50%;
+    }
+    .summary p{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .summary .box{
+        width: 100%;
+        height: 80px;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .summary .box .leftContent p{
+        font-size: 28px;
+    }
+    .summary .box img{
+        width: 32px;
+    }
+    .summary .box .score span{
+        font-size: 28px;
+        font-weight: 700;
+    }
+    button{
+        height: 80px;
+        font-size: 22px;
+        margin-top: 30px;
+    }
+    .summary .leftContent p{
+        font-size: 22px;
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
